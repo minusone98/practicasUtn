@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <link rel="shortcut icon" href="../img/harbour-kitchen-logo-01-1536x1536.jpg" type="image/x-icon">
+
+    <title>Repositorio Nico | Ejercicios</title>
+</head>
+<body class="body">
+    <div class="container">
+        <header class="header">
+            <h1 class="title">M!nu$on3</h1>
+        </header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <!-- <img src="../assets/home.svg" alt="homeSvg"> -->
+                    <a href="../html/index.html" class="nav__link nav__link --corto">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <!-- <img src="../assets/briefcase.svg" alt="briefcaseSvg"> -->
+                    <a href="../html/ejercicios.html" class="nav__link">Ejercicios</a>
+                </li>
+                <li class="nav__item">
+                    <!-- <img src="../assets/layout.svg" alt="layoutSvg"> -->
+                    <a href="#" class="nav__link">Proyectos</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main">
+
+        <!-- EJERCICIO UNO -->
+        <section class="section">
+            <h2 class="section__title">Práctica 1 UTN:</h2>
+            <h3 class="section__subtitle">1. Crea un programa que calcule el área y el perímetro de una circunferencia.</h3>
+            <p class="section__paragraph">
+                Conocido el número en matemática PI π, pedir al usuario que ingrese el valor del radio de
+                una circunferencia y calcular y mostrar por pantalla el área y perímetro. Recuerde que para
+                calcular el área y el perímetro se utilizan las siguientes fórmulas:
+                area = PI * radio2
+                perimetro = 2 * PI * radio
+            </p>
+            <img src="../img/exe1.png" alt="imgPseInt" class="section__pseInt">
+            <div class="section__content">
+                ------------------ prompts comentados ------------------<br>
+                <script>
+                    document.write(`Calcula área y perímetro del círculo. <br>`);
+
+                    let area, perimetro, radio;
+                    const pi = 3.1416;
+                    // radio = prompt('Ingrese radio de la circuferencia en centímetros.');
+                    
+                    perimetro = pi * radio;
+                    area = pi * radio * 2;
+                    
+                    document.write(`El radio del círculo es de ${radio} cms. `);
+                    document.write(`El perímetro del círculo es de ${perimetro} cms, y el área es de ${area} cms.`)
+                </script>
+            </div>
+        </section>
+
+        <!-- EJERCICIO DOS -->
+        <section class="section">
+            <h2 class="section__title"></h2>
+            <h3 class="section__subtitle">2. Precio promedio</h3>
+            <p class="section__paragraph">Escribir un programa que calcule el precio promedio de un producto. El precio promedio se
+                debe calcular a partir del precio del mismo producto en tres establecimientos distintos.</p>
+            <img src="../img/exe2.png" alt="imgSection" class="section__pseInt">
+            <div class="section__content">
+                ------------------ prompts comentados ------------------<br>
+                <script>
+                    let promedio, precio1, precio2, precio3;
+
+                    // precio1 = parseInt(prompt('Ingrese precio del producto en el primer establecimiento'));
+                    // precio2 = parseInt(prompt('Ingrese precio del producto en el segundo establecimiento'));
+                    // precio3 = parseInt(prompt('Ingrese precio del producto en el tercer establecimiento'));
+                    
+                    promedio = ((precio1 + precio2 + precio3)/3);
+
+                    promedio = promedio.toFixed(2);
+                    document.write(`El promedio del precio del producto es de $${promedio}.`)
+                </script>
+            </div>
+        </section>
+
+        <!-- EJERCICIO TRES -->
+        <section class="section">
+            <h2 class="section__title"> </h2>
+            <h3 class="section__subtitle">3. Conversor de distancia</h3>
+            <p class="section__paragraph">Escribir un programa que a partir de una conocida cantidad de metros que el usuario ingresa a través del teclado se
+                debe obtener su equivalente en centímetros, en milímetros y en pulgadas.</p>
+            <img src="../img/exe3.png" alt="imgSection" class="section__pseInt">
+            <div class="section__content">
+                ------------------ prompts comentados ------------------<br>
+                <script>
+                    // const metro = prompt('Ingresa la cantidad de metros a convertir: ');
+                    const centimetros = (metro * 100)                   
+                    const milimetros = (metro * 1000)                  
+                    const pulgadas = (metro* 39.3701).toFixed(2);                    
+
+                    document.write(`La cantidad de ${metro} metro/s se puede expresar como ${centimetros} centímetros, ${milimetros} milímetros o ${pulgadas} pulgadas.`)
+                </script>
+            </div>
+        </section>
+
+        <!-- EJERCICIO CUATRO -->
+        <section class="section">
+            <h2 class="section__title"> </h2>
+            <h3 class="section__subtitle">4. Conversor kilómetros.</h3>
+            <p class="section__paragraph">Escribir un programa que calcule cuántos litros de combustible consumió un automóvil. El
+                usuario ingresará una cantidad de litros de combustible cargados en la estación y una
+                cantidad de kilómetros recorridos, después, el programa calculará el consumo (km/lt) y se lo
+                mostrará al usuario.</p>
+            <img src="../img/exe4.png" alt="imgSection" class="section__pseInt">
+            <div class="section__content">
+                ------------------ prompts comentados ------------------ <br>
+                <script>
+                    // const litrosCargados = parseInt(prompt('Ingrese la cantidad de litros de combustible cargados.'));
+                    // const kilometrosRecorridos = parseInt(prompt('Ingrese la cantidad de kilómetros recorridos.'));
+                    let consumo = kilometrosRecorridos/litrosCargados;
+                    consumo = consumo.toFixed(2);
+
+                    document.write(`La cantidad de consumo es de ${consumo} km/ls.`);
+                </script>
+            </div>
+        </section>
+
+        <!-- EJERCICIO CINCO -->
+        <section class="section">
+            <h2 class="section__title"> </h2>
+            <h3 class="section__subtitle">5. Intercambio de valores</h3>
+            <p class="section__paragraph">Escribir un programa que permita al usuario ingresar el valor de dos variables numéricas de
+                tipo entero. Posteriormente, el programa debe intercambiar los valores de ambas variables y
+                mostrar el resultado final por pantalla.
+                Por ejemplo, si el usuario ingresa los valores num1 = 9 y num2 = 3, la salida a del programa
+                deberá mostrar: num1 = 3 y num2 = 9
+                Ayuda: Para intercambiar los valores de dos variables se debe utilizar una variable auxiliar..</p>
+            <img src="#" alt="imgSection" class="section__pseInt">
+            <div class="section__content">
+                
+            </div>
+        </section>
+
+        <!-- EJERCICIO SEIS -->
+        <section class="section">
+            <h2 class="section__title"> </h2>
+            <h3 class="section__subtitle">6. ejercicio 6</h3>
+            <p class="section__paragraph">Escribir un programa que ....</p>
+            <img src="#" alt="imgSection" class="section__pseInt">
+            <div class="section__content"></div>
+        </section>
+
+        <!-- EJERCICIO SIETE -->
+        <section class="section">
+            <h2 class="section__title"> </h2>
+            <h3 class="section__subtitle">7. ejercicio 7</h3>
+            <p class="section__paragraph">Escribir un programa que ....</p>
+            <img src="#" alt="imgSection" class="section__pseInt">
+            <div class="section__content"></div>
+        </section>
+
+    </main>
+
+
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
