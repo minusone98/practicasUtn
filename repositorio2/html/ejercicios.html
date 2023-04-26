@@ -40,10 +40,23 @@
     </div>
 
     <main class="main">
+        <h2 class="main__title">Prácticas UTN - Ingreso 2023</h2>
+        <p class="main__paragraph">
+            <ul class="main__list">
+                <li class="list__item">Fundamentos Básicos de la Programación</li>
+                <li class="list__item">Variables - Estructuras Secuenciales</li>
+                <li class="list__item">Estructuras Condicionales</li>
+                <li class="list__item">Ciclos - Repetitivos</li>
+                <li class="list__item">Subprogramas</li>
+                <li class="list__item">Arreglos</li>
+                <li class="list__item">Recursividad</li>
+                <li class="list__item">Simulación de EXAMEN de Programación</li>
+            </ul>
+        </p>
+        <h4 class="main__subtitle">Fundamentos de la Programación</h4>
 
         <!-- EJERCICIO UNO -->
         <section class="section">
-            <h2 class="section__title">Práctica 1 UTN:</h2>
             <h3 class="section__subtitle">1. Crea un programa que calcule el área y el perímetro de una circunferencia.</h3>
             <p class="section__paragraph">
                 Conocido el número en matemática PI π, pedir al usuario que ingrese el valor del radio de
@@ -56,17 +69,17 @@
             <div class="section__content">
                 ------------------ prompts comentados ------------------<br>
                 <script>
-                    document.write(`Calcula área y perímetro del círculo. <br>`);
+                    // document.write(`Calcula área y perímetro del círculo. <br>`);
 
-                    let area, perimetro, radio;
-                    const pi = 3.1416;
-                    // radio = prompt('Ingrese radio de la circuferencia en centímetros.');
+                    // // let area, perimetro, radio;
+                    // const pi = 3.1416;
+                    // // radio = prompt('Ingrese radio de la circuferencia en centímetros.');
                     
-                    perimetro = pi * radio;
-                    area = pi * radio * 2;
+                    // perimetro = pi * radio;
+                    // area = pi * radio * 2;
                     
-                    document.write(`El radio del círculo es de ${radio} cms. `);
-                    document.write(`El perímetro del círculo es de ${perimetro} cms, y el área es de ${area} cms.`)
+                    // document.write(`El radio del círculo es de ${radio} cms. `);
+                    // document.write(`El perímetro del círculo es de ${perimetro} cms, y el área es de ${area} cms.`)
                 </script>
             </div>
         </section>
@@ -81,23 +94,23 @@
             <div class="section__content">
                 ------------------ prompts comentados ------------------<br>
                 <script>
-                    let promedio, precio1, precio2, precio3;
+                    // let promedio, precio1, precio2, precio3;
 
                     // precio1 = parseInt(prompt('Ingrese precio del producto en el primer establecimiento'));
                     // precio2 = parseInt(prompt('Ingrese precio del producto en el segundo establecimiento'));
                     // precio3 = parseInt(prompt('Ingrese precio del producto en el tercer establecimiento'));
                     
-                    promedio = ((precio1 + precio2 + precio3)/3);
+                    // promedio = ((precio1 + precio2 + precio3)/3);
 
-                    promedio = promedio.toFixed(2);
-                    document.write(`El promedio del precio del producto es de $${promedio}.`)
+                    // promedio = promedio.toFixed(2);
+                    // document.write(`El promedio del precio del producto es de $${promedio}.`)
                 </script>
             </div>
         </section>
 
         <!-- EJERCICIO TRES -->
         <section class="section">
-            <h2 class="section__title"> </h2>
+            <h2 class="section__title"></h2>
             <h3 class="section__subtitle">3. Conversor de distancia</h3>
             <p class="section__paragraph">Escribir un programa que a partir de una conocida cantidad de metros que el usuario ingresa a través del teclado se
                 debe obtener su equivalente en centímetros, en milímetros y en pulgadas.</p>
@@ -106,11 +119,11 @@
                 ------------------ prompts comentados ------------------<br>
                 <script>
                     // const metro = prompt('Ingresa la cantidad de metros a convertir: ');
-                    const centimetros = (metro * 100)                   
-                    const milimetros = (metro * 1000)                  
-                    const pulgadas = (metro* 39.3701).toFixed(2);                    
+                    // const centimetros = (metro * 100)                   
+                    // const milimetros = (metro * 1000)                  
+                    // const pulgadas = (metro* 39.3701).toFixed(2);                    
 
-                    document.write(`La cantidad de ${metro} metro/s se puede expresar como ${centimetros} centímetros, ${milimetros} milímetros o ${pulgadas} pulgadas.`)
+                    // document.write(`La cantidad de ${metro} metro/s se puede expresar como ${centimetros} centímetros, ${milimetros} milímetros o ${pulgadas} pulgadas.`)
                 </script>
             </div>
         </section>
@@ -129,17 +142,17 @@
                 <script>
                     // const litrosCargados = parseInt(prompt('Ingrese la cantidad de litros de combustible cargados.'));
                     // const kilometrosRecorridos = parseInt(prompt('Ingrese la cantidad de kilómetros recorridos.'));
-                    let consumo = kilometrosRecorridos/litrosCargados;
-                    consumo = consumo.toFixed(2);
+                    // let consumo = kilometrosRecorridos/litrosCargados;
+                    // consumo = consumo.toFixed(2);
 
-                    document.write(`La cantidad de consumo es de ${consumo} km/ls.`);
+                    // document.write(`La cantidad de consumo es de ${consumo} km/ls.`);
                 </script>
             </div>
         </section>
 
         <!-- EJERCICIO CINCO -->
         <section class="section">
-            <h2 class="section__title"> </h2>
+            <h2 class="section__title"></h2>
             <h3 class="section__subtitle">5. Intercambio de valores</h3>
             <p class="section__paragraph">Escribir un programa que permita al usuario ingresar el valor de dos variables numéricas de
                 tipo entero. Posteriormente, el programa debe intercambiar los valores de ambas variables y
@@ -147,30 +160,139 @@
                 Por ejemplo, si el usuario ingresa los valores num1 = 9 y num2 = 3, la salida a del programa
                 deberá mostrar: num1 = 3 y num2 = 9
                 Ayuda: Para intercambiar los valores de dos variables se debe utilizar una variable auxiliar..</p>
-            <img src="#" alt="imgSection" class="section__pseInt">
+            <img src="../img/exe5.png" alt="imgSection" class="section__pseInt">
             <div class="section__content">
-                
+                ------------------ prompts comentados ------------------ <br>
+                <script>
+                    // let num1, num2;
+                    // num1 = prompt('Ingrese el primer valor: ');
+                    // num2 = prompt('Ingrese el segundo valor: ');
+
+                    // document.write(`Valor 1 = ${num2} <br> Valor 2 = ${num1}`)
+                </script>
             </div>
         </section>
-
+  
         <!-- EJERCICIO SEIS -->
         <section class="section">
-            <h2 class="section__title"> </h2>
-            <h3 class="section__subtitle">6. ejercicio 6</h3>
-            <p class="section__paragraph">Escribir un programa que ....</p>
-            <img src="#" alt="imgSection" class="section__pseInt">
-            <div class="section__content"></div>
+            <h2 class="section__title"></h2>
+            <h3 class="section__subtitle">6. Porcentaje niñas y niños</h3>
+            <p class="section__paragraph">Escribir un programa para un colegio que desea saber qué porcentaje de niños y qué porcentaje de niñas hay en el curso
+                actual. Diseñar un algoritmo para este propósito. Recuerda que para calcular el porcentaje
+                puedes hacer una regla de 3 simple. El programa debe solicitar al usuario que ingrese la
+                cantidad total de niños, y la cantidad total de niñas que hay en el curso. 
+                .</p>
+            <img src="../img/exe6.png" alt="imgSection" class="section__pseInt">
+            <div class="section__content">
+                ------------------ prompts comentados ------------------ <br>
+                <script>
+                    // let niñas, niños, total;
+                    // // niñas = parseInt(prompt('Ingrese la cantidad de niñas: '));
+                    // // niños = parseInt(prompt('Ingrese la cantidad de niños: '));
+                    // total = niños + niñas;
+                    
+                    // document.write(`El porcentaje total de niños es % ${(niños*100)/total}
+                    // y el de niñas es % ${(niñas*100)/total}`);
+                </script>
+            </div>
         </section>
 
         <!-- EJERCICIO SIETE -->
         <section class="section">
-            <h2 class="section__title"> </h2>
-            <h3 class="section__subtitle">7. ejercicio 7</h3>
-            <p class="section__paragraph">Escribir un programa que ....</p>
-            <img src="#" alt="imgSection" class="section__pseInt">
-            <div class="section__content"></div>
+            <h2 class="section__title"></h2>
+            <h3 class="section__subtitle">7. Área y Perímetros de un rectángulo.</h3>
+            <p class="section__paragraph">Escribir un programa que solicite al usuario que ingrese la base y altura de un rectángulo, y calcular y mostrar por
+                pantalla el área y perímetro del mismo
+                area = base * altura
+                perimetro = 2 * altura + 2 * base.</p>
+            <img src="../img/exe7.png" alt="imgSection" class="section__pseInt">
+            <div class="section__content">
+                ------------------ prompts comentados ------------------ <br>
+                <script>
+                    // let base, altura, area, perimetro;
+
+                    // base = prompt('Ingrese la base del rectángulo en cms.');
+                    // altura = prompt('Ingrese la altura del rectángulo en cms.');
+                    
+                    // perimetro = 2 * base + 2 * altura;
+                    // area = base * altura;
+
+                    // document.write(`El área del rectángulo mide ${area} cms. Y el perímetro es de ${perimetro} cms.`);
+                </script>
+            </div>
         </section>
 
+        <!-- EJERCICIO OCHO -->
+        <section class="section">
+            <h2 class="section__title"> </h2>
+            <h3 class="section__subtitle">8.Volúmen de un cilíndro</h3>
+            <p class="section__paragraph">Escribir un programa que calcule el volumen de un cilindro. Para ello se deberá solicitar al
+                usuario que ingrese el radio y la altura. Mostrar el resultado por pantalla.
+                volumen = π * radio2 * altura .</p>
+            <img src="../img/exe8.png" alt="imgSection" class="section__pseInt">
+            <div class="section__content">
+                ------------------ prompts comentados ------------------ <br>
+                <script>
+                    // let radio, altura, volumen;
+                    // radio = prompt('Ingrese el radio del cilíndro: ');
+                    // altura = prompt('Ingrese la altura del cilíndro: ');
+                    const PI = 3.14159;
+
+                    // volumen = (PI * (Math.pow(radio,2))* altura).toFixed(2);
+
+                    document.write(`El volúmen del cilíndro es de ${volumen} centímetros cúbicos.`);
+                </script>
+            </div>
+        </section>
+
+        <!-- EJERCICIO NUEVE -->
+        <section class="section">
+            <h2 class="section__title"> </h2>
+            <h3 class="section__subtitle">9. Dias, horas, minutos, segundos.</h3>
+            <p class="section__paragraph">Escribir un programa que a partir de una conocida cantidad de días que el usuario ingresa a través del teclado, escriba
+                un programa para convertir los días en horas, en minutos y en segundos. Por ejemplo
+                1 día = 24 horas = 1440 minutos = 86400 segundos.</p>
+            <img src="../img/exe9.png" alt="imgSection" class="section__pseInt">
+            <div class="section__content">
+                ------------------ prompts comentados ------------------ <br>
+                <script>
+                    // let dias = parseInt(prompt('Ingrese la cantidad de días que desea convertir: '));
+                    // const HORAS_POR_DIA = 24;
+                    // const MINUTOS_POR_HORA = 60;
+                    // const SEGUNDOS_POR_MINUTO = 60;
+                    
+                    // let horas = dias * HORAS_POR_DIA;
+                    // let minutos = horas * MINUTOS_POR_HORA;
+                    // let segundos = minutos * SEGUNDOS_POR_MINUTO;
+                    // document.write(`${dias} días equivalen a ${horas} horas, ${minutos} minutos y ${segundos} segundos.`);
+                </script>
+            </div>
+        </section>
+
+        <!-- EJERCICIO DIEZ -->
+        <section class="section">
+            <h2 class="section__title"> </h2>
+            <h3 class="section__subtitle">10. Calcular inflacion</h3>
+            <p class="section__paragraph">Escribir un programa que solicite al usuario que ingrese el precio de un producto al inicio del
+                año, y el precio del mismo producto al finalizar el año. El programa debe calcular cuál fue el
+                porcentaje de aumento que tuvo ese producto en el año y mostrarlo por pantalla. .</p>
+            <img src="../img/exe10.png" alt="imgSection" class="section__pseInt">
+            <div class="section__content">
+                ------------------ prompts comentados ------------------ <br>
+                <script>
+
+                    // let precioInicial, precioFinal, aumentoPesos, porcentaje;
+                    // precioInicial = parseInt(prompt('Ingrese precio inicial del producto: '));
+                    // precioFinal = parseInt(prompt('Ingrese precio final del producto: '));
+
+                    // aumentoPesos = precioFinal - precioInicial;
+                    // porcentaje = (aumentoPesos * 100 / precioFinal).toFixed(2);
+
+                    // document.write(`El producto sufrió un aumento de $${aumentoPesos}, lo que también se puede ver como un aumento del % ${porcentaje}`);
+
+                </script>
+            </div>
+        </section>
     </main>
 
 
