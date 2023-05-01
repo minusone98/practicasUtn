@@ -121,8 +121,9 @@
 }
 .main__subtitle{
     text-align: center;
-    padding-top: 1em;
-    font-size: 1.2em;
+    padding-top: 1.5em;
+    font-size: 1.4em;
+    text-transform: uppercase;
 }
 .section__subtitle{
     text-align: center;
